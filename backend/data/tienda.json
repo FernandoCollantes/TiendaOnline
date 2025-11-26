@@ -33,7 +33,7 @@
       "precio": 2299.99,
       "id_categoria": 1,
       "destacado": true,
-      "imagen": "macbook-pro-14.jpg",
+      "imagen": "../assets/images/products/MacBookPro14.png",
       "stock": 15,
       "especificaciones": {
         "procesador": "Apple M3 Pro",
@@ -49,7 +49,7 @@
       "precio": 1899.99,
       "id_categoria": 1,
       "destacado": true,
-      "imagen": "dell-xps-15.jpg",
+      "imagen": "../assets/images/products/DellXPS15.png",
       "stock": 10,
       "especificaciones": {
         "procesador": "Intel Core i7-13700H",
@@ -65,7 +65,7 @@
       "precio": 1599.99,
       "id_categoria": 1,
       "destacado": false,
-      "imagen": "thinkpad-x1.jpg",
+      "imagen": "../assets/images/products/thinkpad-x1.png",
       "stock": 8,
       "especificaciones": {
         "procesador": "Intel Core i5-1335U",
@@ -81,7 +81,7 @@
       "precio": 1199.99,
       "id_categoria": 2,
       "destacado": true,
-      "imagen": "iphone-15-pro.jpg",
+      "imagen": "../assets/images/products/iphone15pro.png",
       "stock": 25,
       "especificaciones": {
         "procesador": "A17 Pro",
@@ -97,7 +97,7 @@
       "precio": 899.99,
       "id_categoria": 2,
       "destacado": true,
-      "imagen": "samsung-s24.jpg",
+      "imagen": "../assets/images/products/samsungGalaxyS24.png",
       "stock": 20,
       "especificaciones": {
         "procesador": "Snapdragon 8 Gen 3",
@@ -113,7 +113,7 @@
       "precio": 699.99,
       "id_categoria": 2,
       "destacado": false,
-      "imagen": "pixel-8.jpg",
+      "imagen": "../assets/images/products/pixel8.png",
       "stock": 15,
       "especificaciones": {
         "procesador": "Google Tensor G3",
@@ -129,7 +129,7 @@
       "precio": 1299.99,
       "id_categoria": 3,
       "destacado": true,
-      "imagen": "ipad-pro.jpg",
+      "imagen": "../assets/images/products/ipadPro12.9.png",
       "stock": 12,
       "especificaciones": {
         "procesador": "Apple M2",
@@ -145,7 +145,7 @@
       "precio": 799.99,
       "id_categoria": 3,
       "destacado": false,
-      "imagen": "galaxy-tab-s9.jpg",
+      "imagen": "../assets/images/products/SamsungGalaxyTabS9.png",
       "stock": 18,
       "especificaciones": {
         "procesador": "Snapdragon 8 Gen 2",
@@ -161,7 +161,7 @@
       "precio": 249.99,
       "id_categoria": 4,
       "destacado": true,
-      "imagen": "airpods-pro.jpg",
+      "imagen": "../assets/images/products/airpodsPro2.png",
       "stock": 50,
       "especificaciones": {
         "tipo": "In-ear",
@@ -177,7 +177,7 @@
       "precio": 79.99,
       "id_categoria": 4,
       "destacado": false,
-      "imagen": "magic-mouse.jpg",
+      "imagen": "../assets/images/products/magicMouse.png",
       "stock": 30,
       "especificaciones": {
         "tipo": "Inalámbrico",
@@ -193,7 +193,7 @@
       "precio": 99.99,
       "id_categoria": 4,
       "destacado": false,
-      "imagen": "mx-master-3s.jpg",
+      "imagen": "../assets/images/products/LogitechMXMaster3S.png",
       "stock": 25,
       "especificaciones": {
         "tipo": "Inalámbrico",
@@ -209,7 +209,7 @@
       "precio": 129.99,
       "id_categoria": 4,
       "destacado": false,
-      "imagen": "samsung-980-pro.jpg",
+      "imagen": "../assets/images/products/Samsung980ProSSD.png",
       "stock": 40,
       "especificaciones": {
         "capacidad": "1TB",

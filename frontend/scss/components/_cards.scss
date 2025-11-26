@@ -1,0 +1,22 @@
+// ============================================================================
+// TARJETAS BASE
+// ============================================================================
+
+.card {
+  @include card-base;
+  transition: transform $transition-normal, box-shadow $transition-normal;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-xl;
+  }
+}
+
+.card-header {
+  padding: $spacing-lg;
+  border-bottom: 1px solid $border-color;
+}
+
+.card-body {
+  padding: $spacing-lg;
+}

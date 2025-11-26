@@ -1,0 +1,84 @@
+// ============================================================================
+// MIXINS REUTILIZABLES
+// ============================================================================
+
+// Flexbox center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Responsive breakpoint
+@mixin respond-to($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Hover effect con elevación
+@mixin hover-lift($translate: -8px, $shadow: $shadow-xl) {
+  transition: all $transition-normal;
+  
+  &:hover {
+    transform: translateY($translate);
+    box-shadow: $shadow;
+  }
+}
+
+// Truncate text
+@mixin truncate-lines($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Card base
+@mixin card-base {
+  background-color: $bg-primary;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-md;
+  overflow: hidden;
+}
+
+// Button base
+@mixin button-base {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: all $transition-fast;
+  outline: none;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Gradiente de fondo metálico
+@mixin metallic-bg {
+  background: $gradient-metallic;
+}
+
+// Animación de entrada
+@mixin fade-in($duration: 0.5s) {
+  animation: fadeIn $duration ease-in-out;
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// ============================================================================
+// BOTONES
+// ============================================================================
+
+.btn {
+  @include button-base;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: white;
+
+  &:hover:not(:disabled) {
+    background-color: $primary-dark;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  color: white;
+
+  &:hover:not(:disabled) {
+    background-color: lighten($secondary, 10%);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid $primary;
+  color: $primary;
+
+  &:hover:not(:disabled) {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+.btn-sm {
+  padding: $spacing-xs $spacing-md;
+  font-size: 0.875rem;
+}
+
+// Botón específico del carrito
+.btn-add-cart {
+  background-color: $primary;
+  color: white;
+  border: none;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all $transition-fast;
+
+  &:hover {
+    background-color: $primary-dark;
+    transform: scale(1.05);
+  }
+}

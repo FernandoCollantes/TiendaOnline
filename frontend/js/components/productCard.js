@@ -15,26 +15,18 @@
  */
 export function crearProductCard(producto) {
     // Determinar si es producto destacado
-    const badgeDestacado = producto.destacado 
-        ? '<span class="product-badge"> Destacado</span>' 
-        : '';
-    
-    // Icono según categoría (simplificado)
-    const iconos = {
-        1: "../assets/images/categories/laptop.png",
-        2: "../assets/images/categories/smartphone.png",
-        3: "../assets/images/categories/tablet.png",
-        4: "../assets/images/categories/accessories.png",
-    };
-    const icono = iconos[producto.id_categoria] || "../assets/images/categories/default.png";
+    const badgeDestacado = producto.destacado
+        
+
+    // Usar imagen del producto si existe, sino usar default
+    const imagen = producto.imagen || '../assets/images/categories/default.png';
     
     return `
         <div class="product-card" data-product-id="${producto.id}">
             <div class="product-image">
-              <img src="${icono}" alt="${producto.nombre}" class="product-icon">
+                <img src="${imagen}" alt="${producto.nombre}" class="product-img">
             </div>
             <div class="product-body">
-                ${badgeDestacado}
                 <h3 class="product-title">${producto.nombre}</h3>
                 <p class="product-description">${producto.descripcion}</p>
                 <div class="product-footer">
@@ -55,15 +47,16 @@ export function crearProductCard(producto) {
  * @returns {string} HTML de la tarjeta
  */
 export function crearCategoryCard(categoria) {
-   const iconos = {
+    // Iconos por categoría
+    const iconos = {
         1: "../assets/images/categories/laptop.png",
         2: "../assets/images/categories/smartphone.png",
         3: "../assets/images/categories/tablet.png",
         4: "../assets/images/categories/accessories.png",
     };
-    const icono = iconos[categoria.id] || "../assets/images/categories/default.png";
+    const icono = iconos[categoria.id] || '../assets/images/categories/default.png';
     
-  return `
+    return `
         <div class="category-card" data-category-id="${categoria.id}">
             <div class="category-icon">
                 <img src="${icono}" alt="${categoria.nombre}" class="category-icon-img">

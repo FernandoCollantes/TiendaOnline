@@ -1,0 +1,43 @@
+// ============================================================================
+// PÁGINA DASHBOARD
+// ============================================================================
+
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding: $spacing-2xl 0;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: $spacing-2xl;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-sm;
+
+    @include respond-to($breakpoint-mobile) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.section {
+  margin-bottom: $spacing-2xl;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-xl;
+
+  h2 {
+    margin: 0;
+  }
+
+  @include respond-to($breakpoint-mobile) {
+    flex-direction: column;
+    gap: $spacing-md;
+    align-items: flex-start;
+  }
+}

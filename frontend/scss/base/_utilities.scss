@@ -1,0 +1,17 @@
+// ============================================================================
+// UTILIDADES
+// ============================================================================
+
+// Texto
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-primary { color: $primary; }
+.text-secondary { color: $text-secondary; }
+
+// Display
+.hidden { display: none !important; }
+.block { display: block !important; }
+.inline-block { display: inline-block !important; }
+.flex { display: flex !important; }

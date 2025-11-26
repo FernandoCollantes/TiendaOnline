@@ -1,0 +1,33 @@
+// ============================================================================
+// FORMULARIOS
+// ============================================================================
+
+.form-group {
+  margin-bottom: $spacing-lg;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: $spacing-sm;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.form-input {
+  width: 100%;
+  padding: $spacing-sm $spacing-md;
+  font-size: 1rem;
+  border: 2px solid $border-color;
+  border-radius: $radius-md;
+  transition: border-color $transition-fast;
+  outline: none;
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 3px rgba($primary, 0.1);
+  }
+
+  &::placeholder {
+    color: $text-light;
+  }
+}

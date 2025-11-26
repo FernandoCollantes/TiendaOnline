@@ -1,0 +1,33 @@
+// ============================================================================
+// ARCHIVO PRINCIPAL - IMPORTA TODO
+// ============================================================================
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+
+// Layout
+@import 'layout/container';
+@import 'layout/grid';
+
+// Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/cards';
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/product-card';
+@import 'components/category-card';
+@import 'components/modal';
+@import 'components/loader';
+
+// Pages
+@import 'pages/login';
+@import 'pages/dashboard';
+@import 'pages/product';
+@import 'pages/cart';

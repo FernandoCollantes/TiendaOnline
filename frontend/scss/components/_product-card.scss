@@ -1,0 +1,72 @@
+// ============================================================================
+// TARJETA DE PRODUCTO
+// ============================================================================
+
+.product-card {
+  @include card-base;
+  @include hover-lift;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  @include metallic-bg;
+  @include flex-center;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: $spacing-md;
+}
+
+.product-body {
+  padding: $spacing-lg;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: $spacing-sm;
+  color: $text-primary;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  color: $text-secondary;
+  margin-bottom: $spacing-md;
+  flex: 1;
+  @include truncate-lines(3);
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary;
+}
+
+// Iconos de productos
+.product-icon,
+.product-detail-icon,
+.cart-icon,
+.category-icon-img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}

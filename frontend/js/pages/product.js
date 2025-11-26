@@ -125,37 +125,25 @@ function cargarProducto(productoId) {
 // ============================================================================
 
 function mostrarDetalleProducto(producto) {
-  // Icono según categoría
-  const iconos = {
-    1: "../assets/images/categories/laptop.png",
-    2: "../assets/images/categories/smartphone.png",
-    3: "../assets/images/categories/tablet.png",
-    4: "../assets/images/categories/accessories.png",
-  };
-  const icono =
-    iconos[producto.id_categoria] || "../assets/images/categories/default.png";
+   const imagen = producto.imagen || "../assets/images/categories/default.png";
 
-  // Badge destacado
-  const badgeDestacado = producto.destacado
-    ? '<span class="product-detail-badge"> Destacado</span>'
-    : "";
-
+  
   // Estado del stock
   let stockHTML = "";
   let stockClass = "";
-  let stockIcon = "";
+  
 
   if (producto.stock > 10) {
     stockClass = "stock-available";
-    stockIcon = "";
+    
     stockHTML = `<span class="${stockClass}">En stock (${producto.stock} unidades)</span>`;
   } else if (producto.stock > 0) {
     stockClass = "stock-low";
-    stockIcon = "";
+    
     stockHTML = `<span class="${stockClass}">Stock limitado (${producto.stock} unidades)</span>`;
   } else {
     stockClass = "stock-out";
-    stockIcon = "";
+    
     stockHTML = `<span class="${stockClass}">Sin stock</span>`;
   }
 
@@ -186,10 +174,10 @@ function mostrarDetalleProducto(producto) {
   // HTML completo
   const html = `
         <div class="product-detail-image">
-            <img src="${icono}" alt="${producto.nombre}" class="product-detail-icon">
+            <img src="${imagen}" alt="${producto.nombre}" class="product-detail-icon">
         </div>
         <div class="product-detail-info">
-            ${badgeDestacado}
+            
             <h1 class="product-detail-title">${producto.nombre}</h1>
             <p class="product-detail-description">${producto.descripcion}</p>
             <div class="product-detail-price">€${producto.precio.toFixed(
@@ -197,7 +185,6 @@ function mostrarDetalleProducto(producto) {
             )}</div>
             
             <div class="product-stock">
-                <span class="stock-icon">${stockIcon}</span>
                 <span class="stock-text">${stockHTML}</span>
             </div>
             
