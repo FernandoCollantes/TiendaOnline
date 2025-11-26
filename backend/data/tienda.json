@@ -1,0 +1,222 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Portátiles",
+      "descripcion": "Los mejores portátiles del mercado",
+      "imagen": "laptops.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Smartphones",
+      "descripcion": "Última tecnología en móviles",
+      "imagen": "smartphones.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Tablets",
+      "descripcion": "Tablets para trabajo y entretenimiento",
+      "imagen": "tablets.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Accesorios",
+      "descripcion": "Accesorios y periféricos",
+      "imagen": "accessories.jpg"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "MacBook Pro 14",
+      "descripcion": "Portátil profesional con chip M3 Pro, pantalla Liquid Retina XDR de 14 pulgadas",
+      "precio": 2299.99,
+      "id_categoria": 1,
+      "destacado": true,
+      "imagen": "macbook-pro-14.jpg",
+      "stock": 15,
+      "especificaciones": {
+        "procesador": "Apple M3 Pro",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "14 pulgadas"
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Dell XPS 15",
+      "descripcion": "Portátil premium con procesador Intel de última generación y pantalla OLED",
+      "precio": 1899.99,
+      "id_categoria": 1,
+      "destacado": true,
+      "imagen": "dell-xps-15.jpg",
+      "stock": 10,
+      "especificaciones": {
+        "procesador": "Intel Core i7-13700H",
+        "ram": "16GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas OLED"
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "Lenovo ThinkPad X1",
+      "descripcion": "Portátil empresarial ligero y potente, ideal para profesionales",
+      "precio": 1599.99,
+      "id_categoria": 1,
+      "destacado": false,
+      "imagen": "thinkpad-x1.jpg",
+      "stock": 8,
+      "especificaciones": {
+        "procesador": "Intel Core i5-1335U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "14 pulgadas"
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "iPhone 15 Pro",
+      "descripcion": "El smartphone más avanzado con chip A17 Pro y cámara de 48MP",
+      "precio": 1199.99,
+      "id_categoria": 2,
+      "destacado": true,
+      "imagen": "iphone-15-pro.jpg",
+      "stock": 25,
+      "especificaciones": {
+        "procesador": "A17 Pro",
+        "ram": "8GB",
+        "almacenamiento": "256GB",
+        "pantalla": "6.1 pulgadas"
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Samsung Galaxy S24",
+      "descripcion": "Smartphone Android premium con IA integrada y cámara de 50MP",
+      "precio": 899.99,
+      "id_categoria": 2,
+      "destacado": true,
+      "imagen": "samsung-s24.jpg",
+      "stock": 20,
+      "especificaciones": {
+        "procesador": "Snapdragon 8 Gen 3",
+        "ram": "8GB",
+        "almacenamiento": "256GB",
+        "pantalla": "6.2 pulgadas"
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "Google Pixel 8",
+      "descripcion": "Smartphone con la mejor cámara computacional del mercado",
+      "precio": 699.99,
+      "id_categoria": 2,
+      "destacado": false,
+      "imagen": "pixel-8.jpg",
+      "stock": 15,
+      "especificaciones": {
+        "procesador": "Google Tensor G3",
+        "ram": "8GB",
+        "almacenamiento": "128GB",
+        "pantalla": "6.2 pulgadas"
+      }
+    },
+    {
+      "id": 7,
+      "nombre": "iPad Pro 12.9",
+      "descripcion": "Tablet profesional con chip M2 y pantalla Liquid Retina XDR",
+      "precio": 1299.99,
+      "id_categoria": 3,
+      "destacado": true,
+      "imagen": "ipad-pro.jpg",
+      "stock": 12,
+      "especificaciones": {
+        "procesador": "Apple M2",
+        "ram": "8GB",
+        "almacenamiento": "256GB",
+        "pantalla": "12.9 pulgadas"
+      }
+    },
+    {
+      "id": 8,
+      "nombre": "Samsung Galaxy Tab S9",
+      "descripcion": "Tablet Android premium con S Pen incluido",
+      "precio": 799.99,
+      "id_categoria": 3,
+      "destacado": false,
+      "imagen": "galaxy-tab-s9.jpg",
+      "stock": 18,
+      "especificaciones": {
+        "procesador": "Snapdragon 8 Gen 2",
+        "ram": "8GB",
+        "almacenamiento": "256GB",
+        "pantalla": "11 pulgadas"
+      }
+    },
+    {
+      "id": 9,
+      "nombre": "AirPods Pro 2",
+      "descripcion": "Auriculares inalámbricos con cancelación de ruido adaptativa",
+      "precio": 249.99,
+      "id_categoria": 4,
+      "destacado": true,
+      "imagen": "airpods-pro.jpg",
+      "stock": 50,
+      "especificaciones": {
+        "tipo": "In-ear",
+        "conectividad": "Bluetooth 5.3",
+        "bateria": "30 horas con estuche",
+        "caracteristicas": "ANC, Audio Espacial"
+      }
+    },
+    {
+      "id": 10,
+      "nombre": "Magic Mouse",
+      "descripcion": "Ratón inalámbrico con superficie Multi-Touch",
+      "precio": 79.99,
+      "id_categoria": 4,
+      "destacado": false,
+      "imagen": "magic-mouse.jpg",
+      "stock": 30,
+      "especificaciones": {
+        "tipo": "Inalámbrico",
+        "conectividad": "Bluetooth",
+        "bateria": "Recargable",
+        "compatibilidad": "Mac, iPad"
+      }
+    },
+    {
+      "id": 11,
+      "nombre": "Logitech MX Master 3S",
+      "descripcion": "Ratón ergonómico para profesionales con 8 botones programables",
+      "precio": 99.99,
+      "id_categoria": 4,
+      "destacado": false,
+      "imagen": "mx-master-3s.jpg",
+      "stock": 25,
+      "especificaciones": {
+        "tipo": "Inalámbrico",
+        "conectividad": "Bluetooth, USB-C",
+        "dpi": "8000",
+        "bateria": "70 días"
+      }
+    },
+    {
+      "id": 12,
+      "nombre": "Samsung 980 Pro SSD",
+      "descripcion": "Disco SSD NVMe de alta velocidad, 1TB",
+      "precio": 129.99,
+      "id_categoria": 4,
+      "destacado": false,
+      "imagen": "samsung-980-pro.jpg",
+      "stock": 40,
+      "especificaciones": {
+        "capacidad": "1TB",
+        "velocidad_lectura": "7000 MB/s",
+        "velocidad_escritura": "5000 MB/s",
+        "interfaz": "PCIe 4.0 NVMe"
+      }
+    }
+  ]
+}

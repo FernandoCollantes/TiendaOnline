@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tienda Online</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- Contenedor principal del login -->
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Logo y título -->
+            <div class="login-header">
+                <h1>Tienda Online</h1>
+                <p>Inicia sesión para continuar</p>
+            </div>
+
+            <!-- Mensajes de error/éxito -->
+            <div id="mensaje" class="hidden"></div>
+
+            <!-- Formulario de login -->
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        class="form-input" 
+                        placeholder="Ingresa tu usuario"
+                        required
+                        autocomplete="username"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input" 
+                        placeholder="Ingresa tu contraseña"
+                        required
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btnLogin">
+                    Iniciar Sesión
+                </button>
+            </form>
+
+            <!-- Información de usuarios de prueba -->
+            <div class="login-info">
+                <p><strong>Usuarios de prueba:</strong></p>
+                <ul>
+                    <li><code>admin</code> / <code>admin123</code></li>
+                    <li><code>fernando</code> / <code>fernando123</code></li>
+                    <li><code>usuario</code> / <code>usuario123</code></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="../js/pages/login.js"></script>
+</body>
+</html>

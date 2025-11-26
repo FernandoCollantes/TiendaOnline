@@ -1,0 +1,25 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "email": "admin@tienda.com",
+      "nombre": "Administrador"
+    },
+    {
+      "id": 2,
+      "username": "fernando",
+      "password": "fernando123",
+      "email": "fernando@tienda.com",
+      "nombre": "Fernando García"
+    },
+    {
+      "id": 3,
+      "username": "usuario",
+      "password": "usuario123",
+      "email": "usuario@tienda.com",
+      "nombre": "Usuario Test"
+    }
+  ]
+}

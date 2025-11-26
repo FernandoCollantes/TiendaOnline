@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tienda Online</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <!-- Logo y título -->
+                <div class="navbar-brand">
+                    <h2>🛒 Tienda Online</h2>
+                </div>
+
+                <!-- Menú de navegación -->
+                <div class="navbar-menu">
+                    <a href="dashboard.html" class="nav-link active">Inicio</a>
+                    <a href="categories.html" class="nav-link">Categorías</a>
+                    <a href="cart.html" class="nav-link">
+                        Carrito
+                        <span id="cartBadge" class="badge hidden">0</span>
+                    </a>
+                </div>
+
+                <!-- Usuario y logout -->
+                <div class="navbar-user">
+                    <span id="userName" class="user-name">Usuario</span>
+                    <button id="btnLogout" class="btn btn-secondary btn-sm">
+                        Cerrar Sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Encabezado -->
+            <section class="dashboard-header">
+                <h1>Bienvenido, <span id="welcomeName">Usuario</span></h1>
+                <p class="text-secondary">Explora nuestro catálogo de productos</p>
+            </section>
+
+            <!-- Productos Destacados -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>Productos Destacados</h2>
+                    <a href="categories.html" class="btn btn-outline">Ver Todas las Categorías</a>
+                </div>
+
+                <!-- Grid de productos destacados -->
+                <div id="productosDestacados" class="grid grid-4">
+                    <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                    <div class="loader"></div>
+                </div>
+            </section>
+
+            <!-- Categorías Rápidas -->
+            <section class="section">
+                <h2>Categorías</h2>
+                <div id="categoriasGrid" class="grid grid-4">
+                    <!-- Las categorías se cargarán dinámicamente -->
+                    <div class="loader"></div>
+                </div>
+            </section>
+
+            <!-- Productos Vistos Recientemente -->
+            <section id="seccionProductosVistos" class="section hidden">
+                <h2>Vistos Recientemente</h2>
+                <div id="productosVistos" class="grid grid-4">
+                    <!-- Los productos vistos se cargarán dinámicamente -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tienda Online - Proyecto DWEC</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="../js/pages/dashboard.js"></script>
+</body>
+</html>

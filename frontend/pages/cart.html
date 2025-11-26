@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Tienda Online</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <h2>🛒 Tienda Online</h2>
+                </div>
+
+                <div class="navbar-menu">
+                    <a href="dashboard.html" class="nav-link">Inicio</a>
+                    <a href="categories.html" class="nav-link">Categorías</a>
+                    <a href="cart.html" class="nav-link active">
+                        Carrito
+                        <span id="cartBadge" class="badge hidden">0</span>
+                    </a>
+                </div>
+
+                <div class="navbar-user">
+                    <span id="userName" class="user-name">Usuario</span>
+                    <button id="btnLogout" class="btn btn-secondary btn-sm">
+                        Cerrar Sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Header -->
+            <section class="dashboard-header">
+                <h1>🛒 Mi Carrito de Compras</h1>
+                <p class="text-secondary">Revisa tus productos antes de finalizar la compra</p>
+            </section>
+
+            <!-- Contenido del Carrito -->
+            <div class="cart-layout">
+                <!-- Lista de Productos -->
+                <div class="cart-items-container">
+                    <div id="cartItems">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+
+                <!-- Resumen del Pedido -->
+                <div class="cart-summary">
+                    <h2>Resumen del Pedido</h2>
+                    
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">€0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>IVA (21%):</span>
+                            <span id="iva">€0.00</span>
+                        </div>
+                        <div class="summary-row summary-total">
+                            <span>Total:</span>
+                            <span id="total">€0.00</span>
+                        </div>
+                    </div>
+
+                    <button id="btnCheckout" class="btn btn-primary btn-block">
+                        Finalizar Compra
+                    </button>
+
+                    <button id="btnContinueShopping" class="btn btn-outline btn-block">
+                        Seguir Comprando
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Confirmación -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✅ ¡Pedido Confirmado!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Tu pedido ha sido procesado exitosamente.</p>
+                <p><strong>Número de pedido:</strong> <span id="orderNumber"></span></p>
+                <p><strong>Total:</strong> <span id="orderTotal"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCloseModal" class="btn btn-primary">
+                    Continuar Comprando
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tienda Online - Proyecto DWEC</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="../js/pages/cart.js"></script>
+</body>
+</html>
