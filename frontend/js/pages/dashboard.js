@@ -95,19 +95,19 @@ function mostrarDatosUsuario() {
  * Cargar y mostrar productos destacados desde LocalStorage
  */
 function cargarProductosDestacados() {
-    console.log('🔍 Iniciando cargarProductosDestacados');
+    console.log(' Iniciando cargarProductosDestacados');
     
     const tienda = obtenerTienda();
-    console.log('🔍 Tienda obtenida:', tienda);
+    console.log(' Tienda obtenida:', tienda);
     
     if (!tienda || !tienda.productos) {
-        console.log('❌ No hay tienda o productos');
+        console.log(' No hay tienda o productos');
         productosDestacadosGrid.innerHTML = '<p class="text-center">No hay productos disponibles</p>';
         return;
     }
     
     const productosDestacados = tienda.productos.filter(p => p.destacado === true);
-    console.log('🔍 Productos destacados encontrados:', productosDestacados.length);
+    console.log(' Productos destacados encontrados:', productosDestacados.length);
     
     if (productosDestacados.length === 0) {
         productosDestacadosGrid.innerHTML = '<p class="text-center">No hay productos destacados</p>';
@@ -118,13 +118,13 @@ function cargarProductosDestacados() {
         .map(producto => crearProductCard(producto))
         .join('');
     
-    console.log('🔍 HTML generado, longitud:', productosHTML.length);
-    console.log('🔍 Primeros 200 caracteres:', productosHTML.substring(0, 200));
+    console.log(' HTML generado, longitud:', productosHTML.length);
+    console.log(' Primeros 200 caracteres:', productosHTML.substring(0, 200));
     
     productosDestacadosGrid.innerHTML = productosHTML;
     
-    console.log('✅ innerHTML asignado');
-    console.log('🔍 Contenido actual del grid:', productosDestacadosGrid.innerHTML.substring(0, 200));
+    console.log(' innerHTML asignado');
+    console.log(' Contenido actual del grid:', productosDestacadosGrid.innerHTML.substring(0, 200));
     
     configurarEventosProductos(tienda.productos);
 }
@@ -247,7 +247,7 @@ function configurarEventosProductos(todosLosProductos) {
                 actualizarBadgeCarrito();
                 
                 // Feedback visual
-                mostrarNotificacion(`✅ ${producto.nombre} añadido al carrito`);
+                mostrarNotificacion(` ${producto.nombre} añadido al carrito`);
                 
                 // Animación del botón
                 button.textContent = '✓ Añadido';

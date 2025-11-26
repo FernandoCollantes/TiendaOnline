@@ -1,10 +1,13 @@
 /**
  * ============================================================================
- * ESTILOS DEL DASHBOARD
+ * ESTILOS DEL DASHBOARD Y COMPONENTES COMPARTIDOS
  * ============================================================================
  */
 
-/* Navbar */
+/* ============================================================================
+   NAVBAR
+   ============================================================================ */
+
 .navbar {
     background-color: var(--bg-primary);
     box-shadow: var(--shadow-md);
@@ -54,7 +57,6 @@
     background-color: var(--bg-secondary);
 }
 
-/* Badge del carrito */
 .badge {
     position: absolute;
     top: -8px;
@@ -85,13 +87,15 @@
     font-size: 0.875rem;
 }
 
-/* Contenido Principal */
+/* ============================================================================
+   CONTENIDO PRINCIPAL
+   ============================================================================ */
+
 .main-content {
     min-height: calc(100vh - 200px);
     padding: var(--spacing-2xl) 0;
 }
 
-/* Header del Dashboard */
 .dashboard-header {
     text-align: center;
     margin-bottom: var(--spacing-2xl);
@@ -102,7 +106,10 @@
     margin-bottom: var(--spacing-sm);
 }
 
-/* Secciones */
+/* ============================================================================
+   SECCIONES
+   ============================================================================ */
+
 .section {
     margin-bottom: var(--spacing-2xl);
 }
@@ -118,7 +125,10 @@
     margin: 0;
 }
 
-/* Tarjeta de Producto */
+/* ============================================================================
+   TARJETA DE PRODUCTO
+   ============================================================================ */
+
 .product-card {
     background-color: var(--bg-primary);
     border-radius: var(--radius-lg);
@@ -143,7 +153,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
 }
 
 .product-body {
@@ -177,7 +186,6 @@
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     flex: 1;
-    /* Limitar a 3 líneas */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -213,7 +221,10 @@
     transform: scale(1.05);
 }
 
-/* Tarjeta de Categoría */
+/* ============================================================================
+   TARJETA DE CATEGORÍA
+   ============================================================================ */
+
 .category-card {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
@@ -233,6 +244,10 @@
 .category-icon {
     font-size: 3rem;
     margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
 }
 
 .category-name {
@@ -246,47 +261,6 @@
     opacity: 0.9;
 }
 
-/* Footer */
-.footer {
-    background-color: var(--bg-dark);
-    color: white;
-    text-align: center;
-    padding: var(--spacing-xl) 0;
-    margin-top: var(--spacing-2xl);
-}
-
-.footer p {
-    margin: 0;
-    color: white;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar-content {
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-
-    .navbar-menu {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .navbar-user {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .section-header {
-        flex-direction: column;
-        gap: var(--spacing-md);
-        align-items: flex-start;
-    }
-
-    .dashboard-header h1 {
-        font-size: 2rem;
-    }
-}
 /* ============================================================================
    FILTROS DE CATEGORÍAS
    ============================================================================ */
@@ -319,4 +293,65 @@
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
+}
+
+/* ============================================================================
+   ESTILOS PARA IMÁGENES (ICONOS REEMPLAZADOS)
+   ============================================================================ */
+
+.product-icon,
+.product-detail-icon,
+.cart-icon,
+.category-icon-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+.footer {
+    background-color: var(--bg-dark);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+    margin-top: var(--spacing-2xl);
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .navbar-menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar-user {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .section-header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: flex-start;
+    }
+
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
 }

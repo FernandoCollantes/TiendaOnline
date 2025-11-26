@@ -16,22 +16,22 @@
 export function crearProductCard(producto) {
     // Determinar si es producto destacado
     const badgeDestacado = producto.destacado 
-        ? '<span class="product-badge">⭐ Destacado</span>' 
+        ? '<span class="product-badge"> Destacado</span>' 
         : '';
     
     // Icono según categoría (simplificado)
     const iconos = {
-        1: '💻', // Portátiles
-        2: '📱', // Smartphones
-        3: '📱', // Tablets
-        4: '🎧'  // Accesorios
+        1: "../assets/images/categories/laptop.png",
+        2: "../assets/images/categories/smartphone.png",
+        3: "../assets/images/categories/tablet.png",
+        4: "../assets/images/categories/accessories.png",
     };
-    const icono = iconos[producto.id_categoria] || '📦';
+    const icono = iconos[producto.id_categoria] || "../assets/images/categories/default.png";
     
     return `
         <div class="product-card" data-product-id="${producto.id}">
             <div class="product-image">
-                ${icono}
+              <img src="${icono}" alt="${producto.nombre}" class="product-icon">
             </div>
             <div class="product-body">
                 ${badgeDestacado}
@@ -55,18 +55,19 @@ export function crearProductCard(producto) {
  * @returns {string} HTML de la tarjeta
  */
 export function crearCategoryCard(categoria) {
-    // Iconos para cada categoría
-    const iconos = {
-        1: '💻',
-        2: '📱',
-        3: '📱',
-        4: '🎧'
+   const iconos = {
+        1: "../assets/images/categories/laptop.png",
+        2: "../assets/images/categories/smartphone.png",
+        3: "../assets/images/categories/tablet.png",
+        4: "../assets/images/categories/accessories.png",
     };
-    const icono = iconos[categoria.id] || '📦';
+    const icono = iconos[categoria.id] || "../assets/images/categories/default.png";
     
-    return `
+  return `
         <div class="category-card" data-category-id="${categoria.id}">
-            <div class="category-icon">${icono}</div>
+            <div class="category-icon">
+                <img src="${icono}" alt="${categoria.nombre}" class="category-icon-img">
+            </div>
             <h3 class="category-name">${categoria.nombre}</h3>
             <p class="category-description">${categoria.descripcion}</p>
         </div>

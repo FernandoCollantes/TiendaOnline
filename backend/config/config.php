@@ -26,7 +26,7 @@
  * - Se usa para firmar y validar tokens de autenticación
  * - Si alguien intenta crear un token falso sin conocer este secreto, será rechazado
  * 
- * ⚠️ IMPORTANTE: En producción real, este token debería:
+ *  IMPORTANTE: En producción real, este token debería:
  * - Ser mucho más largo y complejo (mínimo 64 caracteres)
  * - Guardarse en variables de entorno (.env), NO en el código
  * - Cambiarse periódicamente por seguridad
@@ -89,7 +89,7 @@ define('TIENDA_JSON', __DIR__ . '/../data/tienda.json');
  * Access-Control-Allow-Origin: *
  * - Permite peticiones desde CUALQUIER origen
  * - El asterisco (*) significa "todos"
- * - ⚠️ En producción, deberías especificar tu dominio exacto:
+ * -  En producción, deberías especificar tu dominio exacto:
  *   header('Access-Control-Allow-Origin: https://mitienda.com');
  */
 header('Access-Control-Allow-Origin: *');

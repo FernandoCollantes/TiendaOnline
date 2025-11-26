@@ -2,9 +2,6 @@
  * ============================================================================
  * ESTILOS GLOBALES - TIENDA ONLINE
  * ============================================================================
- * 
- * Estos estilos se aplican a TODAS las páginas del proyecto
- * Incluye: reset, variables CSS, tipografía, y utilidades
  */
 
 /* ============================================================================
@@ -17,18 +14,17 @@
     box-sizing: border-box;
 }
 
-/* Variables CSS (Custom Properties) para colores y medidas reutilizables */
 :root {
     /* Colores principales */
-    --primary-color: #2563eb;      /* Azul principal */
-    --primary-dark: #1e40af;       /* Azul oscuro para hover */
-    --primary-light: #3b82f6;      /* Azul claro */
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #3b82f6;
     
     /* Colores secundarios */
-    --secondary-color: #64748b;    /* Gris */
-    --accent-color: #10b981;       /* Verde para éxito */
-    --danger-color: #ef4444;       /* Rojo para errores */
-    --warning-color: #f59e0b;      /* Naranja para advertencias */
+    --secondary-color: #64748b;
+    --accent-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
     
     /* Colores de fondo */
     --bg-primary: #ffffff;
@@ -47,18 +43,18 @@
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
     
     /* Espaciados */
-    --spacing-xs: 0.25rem;   /* 4px */
-    --spacing-sm: 0.5rem;    /* 8px */
-    --spacing-md: 1rem;      /* 16px */
-    --spacing-lg: 1.5rem;    /* 24px */
-    --spacing-xl: 2rem;      /* 32px */
-    --spacing-2xl: 3rem;     /* 48px */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
     
     /* Border radius */
-    --radius-sm: 0.25rem;    /* 4px */
-    --radius-md: 0.5rem;     /* 8px */
-    --radius-lg: 1rem;       /* 16px */
-    --radius-full: 9999px;   /* Completamente redondeado */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
     
     /* Transiciones */
     --transition-fast: 150ms ease-in-out;
@@ -87,12 +83,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
 }
 
-h1 { font-size: 2.5rem; }    /* 40px */
-h2 { font-size: 2rem; }      /* 32px */
-h3 { font-size: 1.75rem; }   /* 28px */
-h4 { font-size: 1.5rem; }    /* 24px */
-h5 { font-size: 1.25rem; }   /* 20px */
-h6 { font-size: 1rem; }      /* 16px */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
 
 p {
     margin-bottom: var(--spacing-md);
@@ -178,6 +174,11 @@ p {
 .btn-outline:hover:not(:disabled) {
     background-color: var(--primary-color);
     color: white;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
 }
 
 /* ============================================================================

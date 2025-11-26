@@ -97,7 +97,7 @@ function cargarCarrito() {
 function mostrarCarritoVacio() {
     cartItems.innerHTML = `
         <div class="cart-empty">
-            <div class="cart-empty-icon">🛒</div>
+            <div class="cart-empty-icon"></div>
             <h2>Tu carrito está vacío</h2>
             <p>¡Explora nuestros productos y añade algunos al carrito!</p>
             <a href="dashboard.html" class="btn btn-primary">
@@ -127,19 +127,19 @@ function mostrarProductosCarrito(carrito) {
         
         // Icono según categoría
         const iconos = {
-            1: '💻',
-            2: '📱',
-            3: '📱',
-            4: '🎧'
+            1: "../assets/images/categories/laptop.png",
+            2: "../assets/images/categories/smartphone.png",
+            3: "../assets/images/categories/tablet.png",
+            4: "../assets/images/categories/accessories.png",
         };
-        const icono = iconos[producto.id_categoria] || '📦';
+        const icono = iconos[producto.id_categoria] || "../assets/images/categories/default.png";
         
         const subtotal = item.precio * item.cantidad;
         
         return `
             <div class="cart-item" data-product-id="${item.id}">
                 <div class="cart-item-image">
-                    ${icono}
+                  <img src="${icono}" alt="${item.nombre}" class="cart-icon">
                 </div>
                 <div class="cart-item-info">
                     <h3 class="cart-item-name">${item.nombre}</h3>

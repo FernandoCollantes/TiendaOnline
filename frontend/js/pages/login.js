@@ -151,6 +151,6 @@ function habilitarBoton() {
  * Descomentar para ver en consola lo que se guarda en LocalStorage
  */
 
-// console.log('🔍 Debug - Token:', obtenerToken());
-// console.log('🔍 Debug - Usuario:', obtenerUsuario());
-// console.log('🔍 Debug - Tienda:', obtenerTienda());
+// console.log(' Debug - Token:', obtenerToken());
+// console.log(' Debug - Usuario:', obtenerUsuario());
+// console.log(' Debug - Tienda:', obtenerTienda());

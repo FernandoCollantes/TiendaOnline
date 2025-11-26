@@ -198,7 +198,7 @@ function configurarEventosProductos(todosLosProductos) {
             if (producto) {
                 añadirAlCarrito(producto);
                 actualizarBadgeCarrito();
-                mostrarNotificacion(`✅ ${producto.nombre} añadido al carrito`);
+                mostrarNotificacion(` ${producto.nombre} añadido al carrito`);
                 
                 button.textContent = '✓ Añadido';
                 button.style.backgroundColor = 'var(--accent-color)';

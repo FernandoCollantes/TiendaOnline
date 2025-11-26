@@ -89,7 +89,7 @@ function generarToken($userId, $username) {
      * - Para que el token sea una cadena "segura" para URLs y headers HTTP
      * - Evita problemas con caracteres especiales como {, }, ", etc.
      * 
-     * ⚠️ IMPORTANTE: base64 NO es encriptación, solo codificación
+     *  IMPORTANTE: base64 NO es encriptación, solo codificación
      * - Cualquiera puede decodificar base64 y ver el contenido
      * - La seguridad viene del SECRET_TOKEN, no del base64
      */
@@ -202,7 +202,7 @@ function validarToken($token) {
         }
         
         /**
-         * Si llegamos aquí, el token es 100% válido ✅
+         * Si llegamos aquí, el token es 100% válido 
          * Devolvemos solo la información relevante del usuario
          * (sin incluir el secret por seguridad)
          */
@@ -313,7 +313,7 @@ function obtenerTokenDeHeader() {
  * 
  * // En carrito.php:
  * $usuario = verificarAutenticacion(); // Si falla, aquí termina todo
- * // Si llegamos aquí, el usuario está autenticado ✅
+ * // Si llegamos aquí, el usuario está autenticado 
  * echo "Usuario autenticado: " . $usuario['username'];
  * 
  * @return array Datos del usuario autenticado (user_id, username)
@@ -355,7 +355,7 @@ function verificarAutenticacion() {
     }
     
     /**
-     * Si llegamos aquí, todo está bien ✅
+     * Si llegamos aquí, todo está bien 
      * El usuario está autenticado y su token es válido
      * Devolvemos sus datos para que el endpoint los use
      */
