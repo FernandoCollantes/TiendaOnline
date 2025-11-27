@@ -126,20 +126,15 @@ function mostrarProductosCarrito(carrito) {
         if (!producto) return '';
         
         // Icono según categoría
-        const iconos = {
-            1: "../assets/images/categories/laptop.png",
-            2: "../assets/images/categories/smartphone.png",
-            3: "../assets/images/categories/tablet.png",
-            4: "../assets/images/categories/accessories.png",
-        };
-        const icono = iconos[producto.id_categoria] || "../assets/images/categories/default.png";
+        // Usar imagen del producto si existe, sino usar default
+    const imagen = producto.imagen || '../assets/images/categories/default.png';
         
         const subtotal = item.precio * item.cantidad;
         
         return `
             <div class="cart-item" data-product-id="${item.id}">
                 <div class="cart-item-image">
-                  <img src="${icono}" alt="${item.nombre}" class="cart-icon">
+                  <img src="${imagen}" alt="${producto.nombre}" class="product-img">
                 </div>
                 <div class="cart-item-info">
                     <h3 class="cart-item-name">${item.nombre}</h3>
