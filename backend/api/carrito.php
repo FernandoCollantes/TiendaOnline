@@ -4,9 +4,9 @@
  * ENDPOINT DE CARRITO - VALIDACIÓN DE PRECIOS
  * ============================================================================
  * 
- * ¿Para qué sirve este endpoint?
+ * Aclaracion de para que sirve este endpoint:
  * - El cliente puede manipular LocalStorage y cambiar precios
- * - Antes de confirmar la compra, el servidor DEBE validar los precios reales
+ * - Antes de confirmar la compra, el servidor debe validar los precios reales
  * - Es la última línea de defensa contra fraudes
  * 
  * Flujo:

@@ -1,0 +1,1 @@
+//Actualmente vacío, el navbar se maneja desde otro componente; podrá modificarse en el futuro si se requieren funcionalidades adicionales.
