@@ -1,6 +1,7 @@
 ![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?logo=php)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript)
 
+***RECOMENDACIÓN: ABRIR COMPLETAMENTE; NO EN PREVIEW!***
 🛒 TiendaOnline - E-commerce con API REST y LocalStorage
 Aplicación web completa de comercio electrónico con autenticación basada en tokens, gestión de carrito y almacenamiento local inteligente.
 
